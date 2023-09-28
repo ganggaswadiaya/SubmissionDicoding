@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;
+    padding: 100px;
+    text-align: center;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+h4 {
+    margin: 0;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+li {
+    list-style: none;
+}
+header {
+    display: inline;
+}
+#jumbotron {
+    width: 100%;
+    background-image: url(../image/gambarHeader.png);
+    background-size: cover;
+    background-position: center ;
+    /* object-fit: cover;
+    object-position: center; */
+    max-height: 400px;
+}
+header .jumbotron {
+    max-width: 1400px;
+    margin: auto;
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    padding: 30px 50px;
+    background-color: white;
+}
+nav {
+    max-width: 1400px;
+    margin: auto;
+}
+nav ul {
+    padding: 0;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+a:hover {
+    color: gray;
+}
+main {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+}
+main .conten {
+    margin-left: 50px;
+    margin-right: 50px;
+    flex: 2;
+    margin-bottom: 200px;
+}
+aside {
+    flex: 1;
+    border-left: 1px solid grey;
+    margin-top: 50px;
+    padding-left: 20px;
+    margin-bottom: 200px;
+    margin: 50px 20px 200px 20px;
+}
+#tentang p{
+    margin-top: 50px;
+    font-size: 20px;
+    color: rgb(81, 81, 81);
+}
+#tentang {
+    margin-bottom: 100px;
+}
+.title p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: rgb(81, 81, 81);
+}
+section {
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+}
+section .imageSection img{
+    width: 300px;
+}
+section .descSection p {
+    font-size: 18px;
+    color: rgb(81, 81, 81);
+    margin: 0;
+    margin-bottom: 20px;
+}
+section .descSection {
+    margin-left: 30px;
+}
+.first {
+    margin-top: -50px;
+}
+.descSection a {
+    padding: 10px 20px;
+    background-color: #DEFFD9;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+section .descSection a:hover {
+    box-shadow: none;
+}
+aside h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.descCard h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+.descCard p {
+    font-size: 10px;
+}
+aside .card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+aside .card:hover {
+    box-shadow: none;
+}
+footer p{
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #2B3944;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    #navbar {
+        padding: 30px 100px;
+    }
+    nav ul {
+        width: 50%;
+    }
+    main {
+        flex-direction: column;
+    }
+    main .conten {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+    .imageSection img{
+        width: 350px;
+    }
+    aside {
+        margin: 0 100px;
+        margin-bottom: 100px;
+        border: none;
+        padding: 0;
+    }
+    aside .card {
+        width: 45%;
+    }
+    aside .flexCard {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .conten {
+        margin-bottom: 50px;
+    }
+    nav ul {
+        width: 100%;
+    }
+    section {
+        margin: 100px 0;
+        margin-top: -20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section .imageSection img {
+        width: 250px;
+    }
+    section .descSection {
+        margin: 0;
+    }
+    aside .card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
